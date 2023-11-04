@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container h1{
+    text-decoration: underline;
+    margin-bottom: 2vh;
+    text-align: center;
+}
+.container{
+    /* background-color: rgb(148, 255, 219); */
+    width: 100%;
+    height: 100vh;
+    font-family: cursive;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.bord{
+    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(3, 7.5vw);
+    grid-template-rows: repeat(3, 7.5vw);
+    margin-bottom: 2vh;
+}
+
+.cell{
+    border: 3px outset rgba(82, 82, 82, 0.5);
+    font-size: xx-large;
+    font-weight:bolder;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.cell:hover{
+    background-color: rgba(71, 255, 246, 0.4);
+}
+
+.gameInfo{
+    padding: 2vh;
+}
+
+.img-box img{
+    display: none;
+}
+.br{
+    border-right: 0;
+}
+.bl{
+    border-left: 0;
+}
+.bt{
+    border-top: 0;
+}
+.bb{
+    border-bottom: 0;
+}
+
+.userInfo{
+    display: flex;
+    justify-content:space-between;
+    margin: 1.5vh 0;
+}
+.player{
+    margin: 0 1.5vh;
+    font-size: larger;
+}
+
+.reset{
+    border: none;
+    padding: 2vh;
+    background-color: aqua;
+    border-radius: 2vh;
+    cursor: pointer;
+    transition: .4s;
+    margin-top: 1vh;
+    margin-bottom: 2vh;
+
+}
+.reset:hover{
+    background-color: rgb(0, 140, 140);
+}
+
+.cell.disable{
+    background-color: rgb(153, 153, 153);
+}
+#gif{
+    margin: 1vh 0;
+    width: 0;
+    transition: width 1s ease-in-out;
+}
+#winner{
+    font-weight: bold;
+    font-size: large;
+    color: rgb(255, 93, 52);
+}
+
+@media screen and (max-width: 500px) {
+    .cell{
+        border: 1.5px outset rgba(82, 82, 82, 0.5);
+        font-size: large;
+        font-weight:bold;
+    }
+    
+    .img-box img{
+        display: none;
+    }
+    .br{
+        border-right: 0;
+    }
+    .bl{
+        border-left: 0;
+    }
+    .bt{
+        border-top: 0;
+    }
+    .bb{
+        border-bottom: 0;
+    }
+
+}
+
+
+
